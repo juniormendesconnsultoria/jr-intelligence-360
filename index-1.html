@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JR Intelligence 360°</title>
+<style>
+:root{--bg:#0a1020;--panel:#111b2e;--panel2:#17243a;--line:#263751;--text:#edf3fb;--muted:#9aabc2;--blue:#55a6ff;--gold:#e7b85c;--green:#55c79a}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 80% 0%,#182b48 0,transparent 35%),var(--bg);color:var(--text);font:15px/1.5 Inter,system-ui,Arial,sans-serif}
+button{font:inherit}.shell{display:grid;grid-template-columns:250px 1fr;min-height:100vh}.side{padding:26px 18px;border-right:1px solid var(--line);background:#0b1425}.brand{display:flex;gap:12px;align-items:center;padding:0 8px 28px}.mark{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,#4ba5ff,#bd8b39);display:grid;place-items:center;color:#08111f;font-weight:900;font-size:20px}.brand b{display:block;font-size:16px;letter-spacing:.5px}.brand small{color:var(--muted)}.navlabel{margin:18px 10px 8px;color:#71849e;font-size:10px;letter-spacing:1.8px;font-weight:800}.nav button{display:flex;width:100%;gap:12px;align-items:center;border:0;background:transparent;color:#aebbd0;padding:12px;border-radius:10px;text-align:left;margin:3px 0;cursor:pointer}.nav button.active,.nav button:hover{background:#172943;color:white}.nav .ico{width:23px;text-align:center;color:var(--blue)}.sidefoot{position:sticky;top:90vh;margin:28px 8px 0;color:#73849d;font-size:11px}.main{padding:30px clamp(18px,4vw,48px);max-width:1500px;width:100%;margin:auto}.top{display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap}.eyebrow{color:var(--blue);font-size:11px;font-weight:800;letter-spacing:2px}.top h1{margin:4px 0;font-size:clamp(25px,4vw,36px)}.sub{color:var(--muted);margin:0}.status{border:1px solid #725d32;color:#f1c66e;background:#3a2d16;padding:8px 12px;border-radius:999px;font-size:12px}.welcome{margin:26px 0 20px;padding:22px 24px;border:1px solid var(--line);border-radius:17px;background:linear-gradient(110deg,#142943,#111b2e 65%)}.welcome h2{margin:0 0 5px;font-size:20px}.welcome p{margin:0;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.metric,.agent,.section{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:18px}.metric small{color:var(--muted)}.metric strong{display:block;font-size:25px;margin:6px 0}.metric em{font-size:11px;color:var(--gold);font-style:normal}.section{margin-top:18px}.sectionhead{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:14px}.section h2{font-size:17px;margin:0}.sectionhead span{font-size:11px;color:var(--muted)}.agentgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.agent{background:linear-gradient(160deg,#15243a,#101a2b);padding:17px}.agenttop{display:flex;justify-content:space-between;align-items:center}.agenticon{width:37px;height:37px;border-radius:11px;display:grid;place-items:center;background:#203d60;color:#80bdff;font-size:18px}.pill{font-size:10px;color:#e9c777;background:#3b301d;border:1px solid #66532d;padding:4px 8px;border-radius:99px}.agent h3{font-size:15px;margin:13px 0 4px}.agent p{font-size:12px;color:var(--muted);min-height:54px;margin:0 0 14px}.agent button,.action{border:1px solid #355477;background:#183252;color:#cfe6ff;padding:8px 11px;border-radius:9px;font-size:12px;cursor:pointer}.notice{padding:13px 15px;border-radius:11px;background:#2d281c;border:1px solid #66532d;color:#e8ca8a;font-size:12px}.hidden{display:none}.list{display:grid;gap:10px}.item{display:flex;justify-content:space-between;gap:12px;padding:12px;border-bottom:1px solid var(--line);color:#c7d2e1}.item small{color:var(--muted)}.footer{padding:25px 0;color:#657993;font-size:11px}
+@media(max-width:850px){.shell{grid-template-columns:1fr}.side{border-right:0;border-bottom:1px solid var(--line);padding:14px}.brand{padding-bottom:10px}.nav{display:flex;overflow:auto;gap:4px}.navlabel,.sidefoot{display:none}.nav button{white-space:nowrap;width:auto;padding:9px 11px}.grid{grid-template-columns:repeat(2,1fr)}.agentgrid{grid-template-columns:repeat(2,1fr)}.main{padding:22px 15px}}
+@media(max-width:520px){.grid,.agentgrid{grid-template-columns:1fr}.status{font-size:10px}.welcome{padding:18px}}
+</style>
+</head>
+<body>
+<div class="shell">
+<aside class="side">
+ <div class="brand"><div class="mark">JR</div><div><b>JR INTELLIGENCE</b><small>Central 360°</small></div></div>
+ <div class="navlabel">PLATAFORMA</div>
+ <nav class="nav">
+  <button class="active" data-page="inicio"><span class="ico">◈</span>Visão geral</button>
+  <button data-page="diretores"><span class="ico">✧</span>Diretores IA</button>
+  <button data-page="tarefas"><span class="ico">▤</span>Projetos e tarefas</button>
+  <button data-page="relatorios"><span class="ico">▥</span>Relatórios</button>
+  <button data-page="config"><span class="ico">⚙</span>Configurações</button>
+ </nav>
+ <div class="sidefoot">AMBIENTE INICIAL • JR</div>
+</aside>
+<main class="main">
+ <header class="top"><div><div class="eyebrow">CENTRAL DE COMANDO</div><h1>JR Intelligence 360°</h1><p class="sub">Inteligência, estratégia e gestão em um só lugar.</p></div><div class="status">● Protótipo • integrações pendentes</div></header>
+ <div id="inicio" class="page">
+  <section class="welcome"><h2>Bem-vindo à central de inteligência da JR</h2><p>Uma estrutura executiva para coordenar seis áreas estratégicas, acompanhar prioridades e apoiar decisões.</p></section>
+  <div class="grid">
+   <div class="metric"><small>Diretores planejados</small><strong>06</strong><em>Estrutura inicial cadastrada</em></div>
+   <div class="metric"><small>Automações ativas</small><strong>00</strong><em>Aguardando configuração</em></div>
+   <div class="metric"><small>Relatórios automáticos</small><strong>00</strong><em>Não há envios programados</em></div>
+  </div>
+  <section class="section"><div class="sectionhead"><h2>Seis diretorias inteligentes</h2><span>Selecione uma área para conhecer</span></div><div class="agentgrid" id="homeAgents"></div></section>
+  <section class="section"><div class="sectionhead"><h2>Estado do projeto</h2><span>Transparência operacional</span></div><div class="notice">Esta versão é a interface inicial. Nenhum agente executa tarefas reais, consulta dados privados ou envia e-mails ainda. As integrações serão adicionadas em etapas, com autenticação e aprovação humana.</div></section>
+ </div>
+ <div id="diretores" class="page hidden"><section class="section"><div class="sectionhead"><h2>Diretores IA</h2><span>Seis áreas de atuação</span></div><div class="agentgrid" id="allAgents"></div></section></div>
+ <div id="tarefas" class="page hidden"><section class="section"><div class="sectionhead"><h2>Projetos e tarefas</h2><span>Área preparada para integração</span></div><div class="notice">O cadastro e acompanhamento de tarefas será conectado ao banco de dados na próxima etapa. Nenhuma tarefa fictícia foi inserida.</div></section></div>
+ <div id="relatorios" class="page hidden"><section class="section"><div class="sectionhead"><h2>Relatórios executivos</h2><span>Planejamento</span></div><div class="notice">O relatório diário das 07:00 (horário de Brasília) ainda não está ativado. Será configurado após integrar banco de dados, provedor de IA e serviço de e-mail.</div></section></div>
+ <div id="config" class="page hidden"><section class="section"><div class="sectionhead"><h2>Configurações e integrações</h2><span>Checklist técnico</span></div><div class="list"><div class="item">Repositório GitHub <small>Conectado como origem do código</small></div><div class="item">Autenticação e perfis de acesso <small>Pendente</small></div><div class="item">Banco de dados <small>Pendente</small></div><div class="item">Provedor de IA <small>Pendente</small></div><div class="item">E-mail e relatórios agendados <small>Pendente</small></div><div class="item">Auditoria e aprovações humanas <small>Pendente</small></div></div></section></div>
+ <footer class="footer">JR Intelligence 360° • Protótipo inicial • Não inserir chaves, senhas ou dados confidenciais no repositório público.</footer>
+</main>
+</div>
+<script>
+const agents=[
+["01","Diretor de Projetos IA","Estratégia e planejamento","Organiza planos, cronogramas, entregas, prioridades e acompanhamento de iniciativas.","▦"],
+["02","Diretor de Marketing IA","Marca e comunicação","Apoia campanhas, conteúdo, posicionamento, presença digital e geração de demanda.","✦"],
+["03","Diretor Jurídico IA","Risco e conformidade","Apoia análises preliminares de contratos, LGPD e compliance. Exige validação profissional.","§"],
+["04","Diretor Comercial IA","Mercado e vendas","Pesquisa oportunidades, prepara apresentações e propostas e organiza o CRM.","↗"],
+["05","Diretor de Finanças IA","Gestão financeira","Apoia orçamento, custos, fluxo de caixa, precificação e indicadores.","◫"],
+["06","Diretor Operacional IA","Processos e qualidade","Apoia processos, produtividade, atendimento, qualidade e melhoria contínua.","⚙"]
+];
+function cards(){return agents.map(a=>`<article class="agent"><div class="agenttop"><div class="agenticon">${a[4]}</div><span class="pill">Planejado</span></div><h3>${a[0]} · ${a[1]}</h3><small style="color:#83baff">${a[2]}</small><p>${a[3]}</p><button onclick="alert('Diretoria ainda não conectada. Esta etapa será habilitada na integração do sistema.')">Ver diretoria</button></article>`).join("")}
+document.getElementById("homeAgents").innerHTML=cards();document.getElementById("allAgents").innerHTML=cards();
+document.querySelectorAll(".nav button").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll(".nav button").forEach(x=>x.classList.remove("active"));b.classList.add("active");document.querySelectorAll(".page").forEach(p=>p.classList.add("hidden"));document.getElementById(b.dataset.page).classList.remove("hidden");}));
+</script>
+</body></html>
